@@ -14,16 +14,16 @@ import org.springframework.web.servlet.ModelAndView;
 
 
 
-@Controller(value = "mainController2")  // id는 mainController
-@RequestMapping
+//@Controller(value = "mainController2")  // id는 mainController
+//@RequestMapping
 public class MainController2 {
 	
-	@RequestMapping(value = "/loginForm.do")
-	public ModelAndView loginForm(HttpServletRequest request,  HttpServletResponse response ) throws Exception{
-		ModelAndView mav=new ModelAndView();
-		mav.setViewName("loginForm");
-		return mav;
-	}
+//	@RequestMapping(value = "/loginForm.do")
+//	public ModelAndView loginForm(HttpServletRequest request,  HttpServletResponse response ) throws Exception{
+//		ModelAndView mav=new ModelAndView();
+//		mav.setViewName("loginForm");
+//		return mav;
+//	}
 	//required = false 해 놓으면 password 파라미터가 없을 경우 null반환 
 //	@RequestMapping(value = "/login.do", method = RequestMethod.POST)
 //	public ModelAndView login(@RequestParam(required = true) String id,
@@ -63,15 +63,15 @@ public class MainController2 {
 	
 	//@ModelAttribute
 	//뷰에 노출되는 명명된 모델 속성에 메서드 매개변수 또는 메서드 반환 값을 바인딩하는 주석입니다.
-	@RequestMapping(value = "/login.do", method = RequestMethod.POST)
-	public ModelAndView login2(@ModelAttribute("info") LoginVO loginVO , HttpServletRequest request,  HttpServletResponse response ) throws Exception{
-		ModelAndView mav=new ModelAndView();	
-		System.out.println(loginVO);
-		
-		System.out.println(loginVO.getUserID());
-		System.out.println(loginVO.getPassword());
-		
-		mav.setViewName("loginResult");
-		return mav;
-	}
+//	@RequestMapping(value = "/login.do", method = RequestMethod.POST)
+//	public ModelAndView login2(@ModelAttribute("info") LoginVO loginVO , HttpServletRequest request,  HttpServletResponse response ) throws Exception{
+//		ModelAndView mav=new ModelAndView();	
+//		System.out.println(loginVO);
+//		
+//		System.out.println(loginVO.getUserID());
+//		System.out.println(loginVO.getPassword());
+//		
+//		mav.setViewName("loginResult");
+//		return mav;
+//	}
 }

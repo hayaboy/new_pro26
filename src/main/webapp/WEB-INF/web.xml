@@ -3,17 +3,18 @@
   <display-name>pro24</display-name>
   
   
-   <!-- <listener>
+   <listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-	</listener> -->
+	</listener>
   
   
-  <!-- <context-param>
+  <context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>    	
             /WEB-INF/config/action-mybatis.xml
+            
    		</param-value>
-	</context-param> -->
+	</context-param>
 	
 	
 	<servlet>
